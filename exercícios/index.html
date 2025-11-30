@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafios - Curso em Vídeo</title>
+  <title>Exercícios - Curso em Vídeo</title>
+
   <style>
     :root {
       --bg: #0f172a;
@@ -45,7 +46,7 @@
       background: linear-gradient(135deg, rgba(15,23,42,0.9), rgba(15,23,42,0.7));
       border-radius: 22px;
       padding: 22px 22px 20px;
-      border: 1px solid rgba(148,163,184,0.3);
+      border: 1px solid rgba(148,163,184,0.35);
       box-shadow: var(--shadow-soft);
       display: flex;
       flex-direction: column;
@@ -64,14 +65,6 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       font-weight: 600;
-    }
-
-    .hero-badge span.icon {
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--accent);
-      box-shadow: 0 0 12px var(--accent);
     }
 
     .hero-title {
@@ -99,25 +92,24 @@
     }
 
     .card {
-      position: relative;
       background: radial-gradient(circle at top left, rgba(56,189,248,0.12), var(--bg-card));
       border-radius: var(--radius-lg);
-      padding: 16px 16px 14px;
+      padding: 16px;
       border: 1px solid rgba(148,163,184,0.25);
       transition: 0.16s ease;
     }
 
     .card:hover {
       transform: translateY(-4px);
-      border-color: rgba(56,189,248,0.75);
+      border-color: rgba(56,189,248,0.7);
       box-shadow: 0 16px 40px rgba(15,23,42,0.9);
       background: radial-gradient(circle at top left, rgba(56,189,248,0.18), var(--bg-card));
     }
 
     .card a {
-      display: block;
       color: var(--text);
       text-decoration: none;
+      display: block;
     }
 
     .card-label {
@@ -129,13 +121,6 @@
       letter-spacing: 0.08em;
       color: var(--text-muted);
       margin-bottom: 8px;
-    }
-
-    .card-label-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: var(--accent);
     }
 
     .card-title {
@@ -151,18 +136,11 @@
       margin-bottom: 10px;
     }
 
-    .card-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
     .pill {
       padding: 4px 9px;
       border-radius: 999px;
       border: 1px solid rgba(148,163,184,0.4);
+      font-size: 0.78rem;
     }
 
     .pill-cta {
@@ -190,200 +168,106 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <section class="hero">
-        <div class="hero-badge">
-          <span class="icon"></span>
-          <span>Trilha de desafios</span>
-        </div>
-        <h1 class="hero-title">Desafios do Curso em Vídeo</h1>
-        <p class="hero-subtitle">
-          Aqui você encontra todos os desafios práticos de HTML5 & CSS3 ― do 1 ao 10 ― organizados para facilitar seus estudos.
-        </p>
-      </section>
+<header>
+  <div class="container">
+    <section class="hero">
+      <div class="hero-badge">Lista de Exercícios</div>
+      <h1 class="hero-title">Exercícios de HTML5 & CSS3</h1>
+      <p class="hero-subtitle">Todos os exercícios do Curso em Vídeo, do ex001 ao ex021 — incluindo o ex008-b.</p>
+    </section>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="grid">
+      
+      <!-- LISTA DE EXERCÍCIOS GERADA EM CARDS -->
+      <!-- Cada card aponta para uma pasta exNNN/index.html -->
+
+      <!-- Aqui entram todos os exercícios automaticamente -->
+      <!-- Eu escrevi manualmente para ficar perfeito -->
+
+      <!-- EXERCICIOS 001 A 021 -->
+
+      <!-- EX001 -->
+      <article class="card"><a href="ex001/index.html"><div class="card-label">Exercício 01</div><h2 class="card-title">ex001 – Primeiros comandos</h2><p class="card-desc">Primeiro contato com HTML.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX002 -->
+      <article class="card"><a href="ex002/index.html"><div class="card-label">Exercício 02</div><h2 class="card-title">ex002 – Parágrafos e quebras</h2><p class="card-desc">Trabalhando básica de textos.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX003 -->
+      <article class="card"><a href="ex003/index.html"><div class="card-label">Exercício 03</div><h2 class="card-title">ex003 – Imagens</h2><p class="card-desc">Exibindo imagens e formatos.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX004 -->
+      <article class="card"><a href="ex004/index.html"><div class="card-label">Exercício 04</div><h2 class="card-title">ex004 – Ícones e favicon</h2><p class="card-desc">Adicionando ícone ao site.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX005 -->
+      <article class="card"><a href="ex005/index.html"><div class="card-label">Exercício 05</div><h2 class="card-title">ex005 – Estrutura básica</h2><p class="card-desc">Tags HTML essenciais.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX006 -->
+      <article class="card"><a href="ex006/index.html"><div class="card-label">Exercício 06</div><h2 class="card-title">ex006 – Hierarquia de títulos</h2><p class="card-desc">Organização semântica.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX007 -->
+      <article class="card"><a href="ex007/index.html"><div class="card-label">Exercício 07</div><h2 class="card-title">ex007 – Formatações básicas</h2><p class="card-desc">Negrito, itálico, marcação.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX008 -->
+      <article class="card"><a href="ex008/index.html"><div class="card-label">Exercício 08</div><h2 class="card-title">ex008 – Citações e códigos</h2><p class="card-desc">blockquote, pre, code.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX008-b -->
+      <article class="card"><a href="ex008-b/index.html"><div class="card-label">Exercício 08-b</div><h2 class="card-title">ex008-b – Listas mistas</h2><p class="card-desc">Listas dentro de listas.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX009 -->
+      <article class="card"><a href="ex009/index.html"><div class="card-label">Exercício 09</div><h2 class="card-title">ex009 – Links internos e externos</h2><p class="card-desc">Página de navegação.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX010 -->
+      <article class="card"><a href="ex010/index.html"><div class="card-label">Exercício 10</div><h2 class="card-title">ex010 – Links e navegação</h2><p class="card-desc">Download, target, rel.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX011 -->
+      <article class="card"><a href="ex011/index.html"><div class="card-label">Exercício 11</div><h2 class="card-title">ex011 – Mídias</h2><p class="card-desc">Imagens dinâmicas.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX012 -->
+      <article class="card"><a href="ex012/index.html"><div class="card-label">Exercício 12</div><h2 class="card-title">ex012 – Vídeos locais</h2><p class="card-desc">Tag video + sources.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX013 -->
+      <article class="card"><a href="ex013/index.html"><div class="card-label">Exercício 13</div><h2 class="card-title">ex013 – CSS inline</h2><p class="card-desc">Estilos aplicados direto.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX014 -->
+      <article class="card"><a href="ex014/index.html"><div class="card-label">Exercício 14</div><h2 class="card-title">ex014 – CSS interno</h2><p class="card-desc">Estilos dentro do head.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX015 -->
+      <article class="card"><a href="ex015/index.html"><div class="card-label">Exercício 15</div><h2 class="card-title">ex015 – CSS externo</h2><p class="card-desc">Arquivos .css externos.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX016 -->
+      <article class="card"><a href="ex016/index.html"><div class="card-label">Exercício 16</div><h2 class="card-title">ex016 – Cores</h2><p class="card-desc">Hexadecimal, RGB, HSL.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX017 -->
+      <article class="card"><a href="ex017/index.html"><div class="card-label">Exercício 17</div><h2 class="card-title">ex017 – Fontes</h2><p class="card-desc">Font-family, sizes.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX018 -->
+      <article class="card"><a href="ex018/index.html"><div class="card-label">Exercício 18</div><h2 class="card-title">ex018 – Google Fonts</h2><p class="card-desc">Importação de fontes.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX019 -->
+      <article class="card"><a href="ex019/index.html"><div class="card-label">Exercício 19</div><h2 class="card-title">ex019 – Seletores CSS</h2><p class="card-desc">IDs, classes e agrupamentos.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX020 -->
+      <article class="card"><a href="ex020/index.html"><div class="card-label">Exercício 20</div><h2 class="card-title">ex020 – Pseudo-classes</h2><p class="card-desc">Hover, active, visited.</p><span class="pill-cta">Abrir →</span></a></article>
+
+      <!-- EX021 -->
+      <article class="card"><a href="ex021/index.html"><div class="card-label">Exercício 21</div><h2 class="card-title">ex021 – Box Model</h2><p class="card-desc">Padding, border e margin.</p><span class="pill-cta">Abrir →</span></a></article>
+
     </div>
-  </header>
 
-  <main>
-    <div class="container">
-      <div class="grid">
+  </div>
+</main>
 
-        <!-- DESAFIOS 1 AO 10 -->
-        <!-- MODELO PADRÃO - todos iguais, só muda o número -->
+<footer>
+  <div class="container">
+    <span>Feito por Ziragn • Estudos de HTML & CSS</span>
+    <span>Hospedado com GitHub Pages</span>
+  </div>
+</footer>
 
-        <!-- Loop manual dos cards -->
-        <!-- Você só precisa ajustar o texto se quiser -->
-
-        <!-- DESAFIO 01 -->
-        <article class="card">
-          <a href="d001/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 01</span>
-            </div>
-            <h2 class="card-title">Primeiro desafio — HTML básico</h2>
-            <p class="card-desc">Estrutura mínima de uma página HTML.</p>
-            <div class="card-meta">
-              <span class="pill">Iniciante</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 02 -->
-        <article class="card">
-          <a href="d002/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 02</span>
-            </div>
-            <h2 class="card-title">Conteúdo estruturado</h2>
-            <p class="card-desc">Títulos, parágrafos e semântica básica.</p>
-            <div class="card-meta">
-              <span class="pill">Iniciante</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 03 -->
-        <article class="card">
-          <a href="d003/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 03</span>
-            </div>
-            <h2 class="card-title">Inserindo imagens</h2>
-            <p class="card-desc">Trabalhando com imagens locais e externas.</p>
-            <div class="card-meta">
-              <span class="pill">Iniciante</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 04 -->
-        <article class="card">
-          <a href="d004/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 04</span>
-            </div>
-            <h2 class="card-title">Listas e links</h2>
-            <p class="card-desc">Treino com UL, OL e hyperlinks.</p>
-            <div class="card-meta">
-              <span class="pill">Iniciante</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 05 -->
-        <article class="card">
-          <a href="d005/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 05</span>
-            </div>
-            <h2 class="card-title">Estilos básicos</h2>
-            <p class="card-desc">Primeiro contato com CSS interno.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 06 -->
-        <article class="card">
-          <a href="d006/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 06</span>
-            </div>
-            <h2 class="card-title">Cores e fontes</h2>
-            <p class="card-desc">Usando fontes e paletas CSS.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 07 -->
-        <article class="card">
-          <a href="d007/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 07</span>
-            </div>
-            <h2 class="card-title">Multimídia na página</h2>
-            <p class="card-desc">Vídeos, áudios e iframes.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 08 -->
-        <article class="card">
-          <a href="d008/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 08</span>
-            </div>
-            <h2 class="card-title">Tabelas simples</h2>
-            <p class="card-desc">Primeiros contatos com tabelas HTML.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 09 -->
-        <article class="card">
-          <a href="d009/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 09</span>
-            </div>
-            <h2 class="card-title">Tabelas avançadas</h2>
-            <p class="card-desc">Rowspan, colspan e boas práticas.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- DESAFIO 10 -->
-        <article class="card">
-          <a href="d010/index.html">
-            <div class="card-label">
-              <span class="card-label-dot"></span>
-              <span>Desafio 10</span>
-            </div>
-            <h2 class="card-title">Layout moderno</h2>
-            <p class="card-desc">Caixas, sombras e CSS responsivo.</p>
-            <div class="card-meta">
-              <span class="pill">Intermediário</span>
-              <span class="pill-cta">Abrir →</span>
-            </div>
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <span>Feito por Ziragn • Estudos de HTML & CSS</span>
-      <span>Hospedado com GitHub Pages</span>
-    </div>
-  </footer>
 </body>
 </html>
